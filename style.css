@@ -42,19 +42,20 @@ main {
 .products {
     display: flex;
     flex-wrap: wrap;
-    /*! justify-content: space-evenly; */
-    padding-bottom: 75px;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: space-around;
     width: 100%;
     max-width: 1200px;
     text-align: center;
-    margin: 0 auto;
+    /* box-sizing: content-box; */
 }
 
 .product {
-    background-color: #fff;
     padding: 12px 25px;
     text-align: center;
-    width: 331px;
+    width: 300px;
+    max-width: 360px;
 }
 
 .product h4 {
@@ -66,7 +67,9 @@ main {
 }
 
 .product img {
-    max-width: 90%;
+    /*! position: absolute; */
+    /*! width: 100%; */
+    height: 400px;
 }
 
 .product .price {
